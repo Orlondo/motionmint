@@ -24,3 +24,60 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+/* THEMES — plain CSS to avoid @apply issues */
+
+html[data-theme='luxury'] {
+  background: #000000;
+  color: #F7F3EB;
+}
+
+html[data-theme='luxury'] .mm-primary-bg { background: #000000; }
+html[data-theme='luxury'] .mm-secondary-bg { background: #1B1B1B; }
+html[data-theme='luxury'] .mm-primary-text { color: #F7F3EB; }
+html[data-theme='luxury'] .mm-accent { color: #D4AF37; }
+html[data-theme='luxury'] .mm-accent-bg { background: #D4AF37; }
+
+html[data-theme='tech'] {
+  background: #0b1020;
+  color: #ffffff;
+}
+html[data-theme='tech'] .mm-primary-bg { background: #0b1020; }
+html[data-theme='tech'] .mm-secondary-bg { background: #0f172a; } /* slate-900 */
+html[data-theme='tech'] .mm-primary-text { color: #ffffff; }
+html[data-theme='tech'] .mm-accent { color: #4BFFA5; }
+html[data-theme='tech'] .mm-accent-bg { background: #3B82F6; }
+
+html[data-theme='friendly'] {
+  background: #ffffff;
+  color: #0f172a; /* slate-900 */
+}
+html[data-theme='friendly'] .mm-primary-bg { background: #ffffff; }
+html[data-theme='friendly'] .mm-secondary-bg { background: #FDF2FF; }
+html[data-theme='friendly'] .mm-primary-text { color: #0f172a; }
+html[data-theme='friendly'] .mm-accent { color: #FB7185; }
+html[data-theme='friendly'] .mm-accent-bg { background: #8EF5CE; }
+
+html[data-theme='minimal'] {
+  background: #F2F3F5;
+  color: #1C1C1E;
+}
+html[data-theme='minimal'] .mm-primary-bg { background: #F2F3F5; }
+html[data-theme='minimal'] .mm-secondary-bg { background: #ffffff; }
+html[data-theme='minimal'] .mm-primary-text { color: #1C1C1E; }
+html[data-theme='minimal'] .mm-accent { color: #1C1C1E; }
+html[data-theme='minimal'] .mm-accent-bg { background: #1C1C1E; }
+
+html[data-theme='friendly'] .text-gray-300,
+html[data-theme='minimal'] .text-gray-300 {
+  color: #374151;
+}
+
+html[data-theme='friendly'] .text-gray-200,
+html[data-theme='minimal'] .text-gray-200 {
+  color: #374151;
+}
+html[data-theme='minimal'] .text-black {
+  color: #ffffff;
+}
+
