@@ -8,6 +8,7 @@ import { Features } from "./components/sections/Features";
 import { Pricing } from "./components/sections/Pricing";
 import { Testimonials } from "./components/sections/Testimonials";
 import { FinalCta } from "./components/sections/FinalCta";
+import { Examples } from "./components/sections/Examples";
 
 const THEME_KEY = "motionmint-theme";
 
@@ -45,6 +46,7 @@ export default function Page() {
 
       <main>
         <Hero theme={theme} />
+        <Examples theme={theme} />
         <Features theme={theme} />
         <Pricing theme={theme} />
         <Testimonials theme={theme} />

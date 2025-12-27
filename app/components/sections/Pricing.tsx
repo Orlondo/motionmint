@@ -6,7 +6,7 @@ interface PricingProps {
 
 export const Pricing: React.FC<PricingProps> = ({ theme }) => {
   return (
-    <section className="mm-primary-bg mm-primary-text border-t border-white/5 px-4 py-16 md:px-10">
+    <section id="pricing" className="mm-primary-bg mm-primary-text border-t border-white/5 px-4 py-16 md:px-10">
       <div className="mx-auto max-w-5xl">
         <h2 className="text-xl font-semibold md:text-2xl">
           Simple pricing for serious output.

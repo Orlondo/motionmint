@@ -20,13 +20,22 @@ export const Hero: React.FC<HeroProps> = ({ theme }) => {
             {hero.subtitle}
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
-            <button className="mm-accent-bg rounded-full px-5 py-2 text-sm font-medium text-black shadow-md">
+            {/* <button className="mm-accent-bg rounded-full px-5 py-2 text-sm font-medium text-black shadow-md">
               {hero.primaryCta}
             </button>
             {hero.secondaryCta && (
               <button className="rounded-full border border-white/20 px-5 py-2 text-sm font-medium text-gray-200">
                 {hero.secondaryCta}
               </button>
+            )} */}
+            <a href="#pricing" className="mm-accent-bg rounded-full px-5 py-2 text-sm font-medium text-black shadow-md">
+              {hero.primaryCta}
+            </a>
+
+            {hero.secondaryCta && (
+              <a href="#examples" className="rounded-full border border-white/20 px-5 py-2 text-sm font-medium text-gray-200">
+                {hero.secondaryCta}
+              </a>
             )}
           </div>
           <p className="mt-4 text-xs text-gray-400">
